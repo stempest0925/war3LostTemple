@@ -1,0 +1,47 @@
+
+Frame "TEXT" "txtDemo" {
+    Width 0.1,
+    Height 0.1,
+
+    Text "文本框demo",
+}
+
+
+// BackDrop
+// 包含2部分 背景图片与边框图片 无法触发点击事件
+Frame "BACKDROP" "BgDemo" {
+    Width 0.1,
+    Height 0.1,
+
+    // // 贴图模式 重复填充
+    // BackdropTileBackground,
+    // // 每个贴图的大小
+    // BackdropBackgroundSize 0.05,
+
+    // 设置背景图片
+    BackdropBackground "ReplaceableTextures\TeamColor\TeamColor07.blp",
+
+
+    // 边框图片的设置
+    // 1 设置显示的边框 上下左右和4个角
+    // BackdropCornerFlags "T|L|R|B",
+    BackdropCornerFlags "T|L|R|B|UL|UR|BL|BR",
+
+    // 2 设置边框宽度 默认0.25
+    BackdropCornerSize 0.006,
+
+    // 3 设置边框文件
+    // BackdropTopFile "ReplaceableTextures\TeamColor\TeamColor01.blp",
+    // BackdropLeftFile "ReplaceableTextures\TeamColor\TeamColor02.blp",
+    // BackdropBottomFile "ReplaceableTextures\TeamColor\TeamColor03.blp",
+    // BackdropRightFile "ReplaceableTextures\TeamColor\TeamColor04.blp",
+    // 分别设置边角文件
+    // BackdropCornerFile "ReplaceableTextures\TeamColor\TeamColor05.blp",
+
+    // 同一的边框 4个边框和边角使用同一个文件
+    BackdropEdgeFile "ReplaceableTextures\TeamColor\TeamColor06.blp",
+
+    // 设置背景图片的内边距 (背景图片距离边框外边缘的距离) 上 右 下 左
+    BackdropBackgroundInsets 0.004f 0.006f 0.008f 0.014f,
+}
+

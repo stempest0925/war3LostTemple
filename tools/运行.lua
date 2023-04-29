@@ -13,7 +13,7 @@ if not fs.exists(root / '.w3x') then
 end
 
 subprocess.spawn {
-    ydwe / 'ydwe.exe',
-    '-war3',
+    'C:\\Users\\stemp\\Desktop\\WarCreator\\SDK\\h-lua-main\\depend\\YDWE\\bin\\YDWEConfig.exe',
+    '-launchwar3',
     '-loadfile', root / '.w3x',
 }
