@@ -1,16 +1,22 @@
 require 'scripts.lib.init'
-local console = require 'jass.console'
-
-console.enable = true
-console.write("你好，世界")
 
 _F.FogEnable(false)
 _F.FogMaskEnable(false)
 
--- _U.toc("UI\\path.toc")
-_U.createFrame('TEXT', "txtDemo").position(0.3, 0.3).size(0.1, 0.1).show()
+_U.toc("UI\\path.toc")
+function fun()
+    _U.createFrame('TEXT', "txtDemo").position(0.2, 0.2).show()
+end
 
-console.write(_U.frameHandle)
-
+fun()
 -- _J.DzFrameHideInterface()
 -- _J.DzFrameEditBlackBorders(0, 0)
+
+-- function fun2()
+--     local handle = _J.DzCreateFrameByTagName("BACKDROP", 'UI1', _J.DzGetGameUI(), "Demo_SizeBack", 1)
+--     _J.DzFrameSetAbsolutePoint(handle, _C.FRAME_ALIGN_CENTER, 0.1, 0.1)
+--     -- _J.DzFrameSetSize(handle, 0.1, 0.1)
+--     -- _J.DzFrameSetText(handle, "那实打实打算")
+--     _J.DzFrameShow(handle, true)
+-- end
+-- fun2()
