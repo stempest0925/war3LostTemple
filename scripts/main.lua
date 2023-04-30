@@ -25,13 +25,15 @@ function fun()
         [4] = { icon = 'ReplaceableTextures\\CommandButtonsDisabled\\DISBTN3M1.blp' },
         [5] = { icon = 'ReplaceableTextures\\CommandButtonsDisabled\\DISBTN3M1.blp' }
     }
-    -- local _parent = _U.find("LeftFrame", bagId)
-    -- console.write(bagId, _parent)
+    local _parent = _U.find("LeftFrame", bagId).frameHandle
+    console.write(bagId, _parent)
 
     for i, v in ipairs(leftItems) do
         local position = 0.04 * i
         console.write(i, v.icon, position)
-        _U.create("TestItem", i).position(0.2, position, _C.FRAME_ALIGN_CENTER).img(v.icon).show()
+
+        _U.create("TestItem", i).setParents(_parent).relative(0, position, "LeftFrame").img(v.icon).show()
+        -- _U.create("TestItem", i).position(0.2, position, _C.FRAME_ALIGN_CENTER).img(v.icon).show()
         -- _J.DzFrameSetParent(now.frameHandle, _parent)
     end
 end

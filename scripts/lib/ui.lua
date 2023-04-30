@@ -13,10 +13,10 @@ _U = {
         return _U
     end,
 
-    -- 1 创建ui(无法读取子Frame)
+    -- 创建ui(无法读取子Frame)
     createFrame = function(type, template, parent)
         local parent = parent or _U.mainUi;
-        
+
         _U.id = _U.id + 1
         local name = "ui" .. _U.id
 
@@ -30,7 +30,7 @@ _U = {
         return _U
     end,
 
-    -- 2 设置定位
+    -- 设置定位
     position = function(x, y, point)
         if (_U.frameHandle > 0) then
             local point = point or _C.FRAME_ALIGN_LEFT_BOTTOM
@@ -43,7 +43,17 @@ _U = {
         return _U
     end,
 
-    -- 3 设置宽高
+    -- 设置相对定位
+    relative = function(x, y, referFrameId, point, referPoint)
+        if (_U.frameHandle > 0) then
+            local point = point or _C.FRAME_ALIGN_LEFT_TOP
+            local referPoint = referPoint or _C.FRAME_ALIGN_LEFT_TOP
+            _J.DzFrameSetPoint(_U.frameHandle, point, referFrameId, referPoint, x, y)
+        end
+        return _U
+    end,
+
+    -- 设置宽高
     size = function(w, h)
         if _U.frameHandle > 0 then
             _J.DzFrameSetSize(_U.frameHandle, w, h)
@@ -51,7 +61,7 @@ _U = {
         return _U
     end,
 
-    -- 4 设置文本
+    -- 设置文本
     text = function(text)
         if _U.frameHandle > 0 then
             _J.DzFrameSetText(_U.frameHandle, text)
@@ -59,7 +69,7 @@ _U = {
         return _U
     end,
 
-    -- 4 设置图片
+    -- 设置图片
     img = function(path, flag)
         if _U.frameHandle > 0 then
             -- 0 拉伸  缩放适应
@@ -74,7 +84,15 @@ _U = {
         return _U
     end,
 
-    -- 5 事件注册
+    -- 设置父级
+    setParents = function(parent)
+        if _U.frameHandle > 0 then
+            _J.DzFrameSetParent(_U.frameHandle, parent)
+        end
+        return _U
+    end,
+
+    -- 事件注册
     on = function(evt, action, sync)
         if (_U.frameHandle > 0) then
             local sync = sync or false
@@ -88,7 +106,7 @@ _U = {
         return _U
     end,
 
-    -- 6 显示
+    -- 显示
     show = function()
         if _U.frameHandle > 0 then
             _J.DzFrameShow(_U.frameHandle, true)
@@ -96,7 +114,7 @@ _U = {
 
         return _U
     end,
-    -- 6 隐藏
+    -- 隐藏
     hide = function()
         if _U.frameHandle > 0 then
             _J.DzFrameShow(_U.frameHandle, false)
