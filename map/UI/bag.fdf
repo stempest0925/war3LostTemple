@@ -1,0 +1,5 @@
+Frame "TEXT" "txtDemo" {
+    Width 0.1,
+    Height 0.1,
+    Text "文本框demo",
+}
