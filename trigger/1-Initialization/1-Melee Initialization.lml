@@ -1,0 +1,6 @@
+事件
+    MapInitializationEvent
+条件
+动作
+    Cheat
+        常量: 'exec-lua:lua.base'
