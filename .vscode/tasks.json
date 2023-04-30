@@ -29,35 +29,35 @@
                 "${workspaceRoot}/LostTemple.w3x"
             ]
         },
-        {
-            "label": "Lni",
-            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
-            "presentation": {
-                "echo": false,
-                "reveal": "always",
-                "focus": true,
-                "panel": "new"
-            },
-            "args": [
-                "lni",
-                "${workspaceRoot}/LostTemple.w3x",
-                "${workspaceRoot}"
-            ]
-        },
-        {
-            "label": "Slk",
-            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
-            "presentation": {
-                "echo": false,
-                "reveal": "always",
-                "focus": true,
-                "panel": "new"
-            },
-            "args": [
-                "slk",
-                "${workspaceRoot}",
-                "${workspaceRoot}/LostTemple.w3x"
-            ]
-        },
+        // {
+        //     "label": "Lni",
+        //     "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
+        //     "presentation": {
+        //         "echo": false,
+        //         "reveal": "always",
+        //         "focus": true,
+        //         "panel": "new"
+        //     },
+        //     "args": [
+        //         "lni",
+        //         "${workspaceRoot}/LostTemple.w3x",
+        //         "${workspaceRoot}"
+        //     ]
+        // },
+        // {
+        //     "label": "Slk",
+        //     "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
+        //     "presentation": {
+        //         "echo": false,
+        //         "reveal": "always",
+        //         "focus": true,
+        //         "panel": "new"
+        //     },
+        //     "args": [
+        //         "slk",
+        //         "${workspaceRoot}",
+        //         "${workspaceRoot}/LostTemple.w3x"
+        //     ]
+        // },
     ]
 }

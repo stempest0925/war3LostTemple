@@ -28,28 +28,35 @@ Frame "Frame" "BagFrame" {
         SetPoint TOPLEFT, "BagBg", TOPLEFT, 0.02, -0.02,
         // BackdropBackground "UI\Widgets\BattleNet\bnet-mainmenu-friends-down.blp"
 
-        Frame "BACKDROP" "XjItem" {
-            Width 0.032,
-            Height 0.032,
-            UseActiveContext,
-            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, 0.00,
-            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTN3M1.blp",
-        }
+        // Frame "BACKDROP" "XjItem" {
+        //     Width 0.032,
+        //     Height 0.032,
+        //     UseActiveContext,
+        //     SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, 0.00,
+        //     BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTN3M1.blp",
+        // }
 
-        Frame "BACKDROP" "YdItem" {
-            Width 0.032,
-            Height 0.032,
-            UseActiveContext,
-            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.040,
-            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAdvancedCreatureAttack.blp",
-        }
+        // Frame "BACKDROP" "YdItem" {
+        //     Width 0.032,
+        //     Height 0.032,
+        //     UseActiveContext,
+        //     SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.040,
+        //     BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAdvancedCreatureAttack.blp",
+        // }
 
-        Frame "BACKDROP" "TjItem" {
-            Width 0.032,
-            Height 0.032,
-            UseActiveContext,
-            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.080,
-            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAlleriaFlute.blp",
-        }
+        // Frame "BACKDROP" "TjItem" {
+        //     Width 0.032,
+        //     Height 0.032,
+        //     UseActiveContext,
+        //     SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.080,
+        //     BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAlleriaFlute.blp",
+        // }
     }
+}
+
+Frame "BACKDROP" "TestItem" {
+    Width 0.032,
+    Height 0.032,
+    // SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.080,
+    // BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAlleriaFlute.blp",
 }
