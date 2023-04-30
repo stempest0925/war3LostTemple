@@ -33,7 +33,7 @@ _U = {
     -- 2 设置定位
     position = function(x, y, point)
         if (_U.frameHandle > 0) then
-            local point = point or _C.FRAME_ALIGN_CENTER
+            local point = point or _C.FRAME_ALIGN_LEFT_BOTTOM
             _J.DzFrameSetAbsolutePoint(
                 _U.frameHandle,
                 point,

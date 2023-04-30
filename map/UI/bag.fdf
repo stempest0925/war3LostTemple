@@ -1,5 +1,55 @@
-Frame "TEXT" "txtDemo" {
-    Width 0.1,
-    Height 0.1,
-    Text "文本框demo",
+Frame "Frame" "BagFrame" {
+    Width 0.18,
+    Height 0.26,
+
+    Frame "BACKDROP" "BagBg" {
+        // 使用父节点数据
+        UseActiveContext,
+        SetAllPoints,
+        // 背景
+        BackdropTileBackground,
+        BackdropBackground  "UI\Widgets\EscMenu\Human\quest-normal-background.blp",
+        BackdropBackgroundInsets 0.004f 0.004f 0.004f 0.004f,
+        BackdropBackgroundSize  0.064,
+        // BackdropBlendAll, 支持背景透明
+
+        // 边框
+        BackdropEdgeFile  "UI\Widgets\EscMenu\Orc\orc-options-menu-border.blp",
+        BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+        BackdropCornerSize  0.024,
+    }
+
+    Frame "Frame" "LeftFrame" {
+        Width 0.032,
+        Height 0.02,
+        // 设定位置
+        UseActiveContext,
+        // BackdropTileBackground,
+        SetPoint TOPLEFT, "BagBg", TOPLEFT, 0.02, -0.02,
+        // BackdropBackground "UI\Widgets\BattleNet\bnet-mainmenu-friends-down.blp"
+
+        Frame "BACKDROP" "XjItem" {
+            Width 0.032,
+            Height 0.032,
+            UseActiveContext,
+            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, 0.00,
+            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTN3M1.blp",
+        }
+
+        Frame "BACKDROP" "YdItem" {
+            Width 0.032,
+            Height 0.032,
+            UseActiveContext,
+            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.040,
+            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAdvancedCreatureAttack.blp",
+        }
+
+        Frame "BACKDROP" "TjItem" {
+            Width 0.032,
+            Height 0.032,
+            UseActiveContext,
+            SetPoint TOPLEFT, "LeftFrame", TOPLEFT, 0.00, -0.080,
+            BackdropBackground "ReplaceableTextures\CommandButtonsDisabled\DISBTNAlleriaFlute.blp",
+        }
+    }
 }
