@@ -1,0 +1,63 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "type": "shell",
+    "tasks": [
+        {
+            "label": "运行",
+            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/bin/w3x2lni-lua.exe\"",
+            "args": [
+                ".\\tools\\运行.lua",
+                "${workspaceRoot}/LostTemple.w3x",
+                "${workspaceRoot}/tools/w3x2lni/bin/w2l.exe",
+                "C:/Users/stemp/Desktop/WarCreator/SDK/h-lua-main/depend/YDWE/bin/YDWEConfig.exe",
+            ]
+        },
+        {
+            "label": "Obj",
+            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "args": [
+                "obj",
+                "${workspaceRoot}",
+                "${workspaceRoot}/LostTemple.w3x"
+            ]
+        },
+        {
+            "label": "Lni",
+            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "args": [
+                "lni",
+                "${workspaceRoot}/LostTemple.w3x",
+                "${workspaceRoot}"
+            ]
+        },
+        {
+            "label": "Slk",
+            "command": "chcp 65001 && \"${workspaceRoot}/tools/w3x2lni/w2l.exe\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            },
+            "args": [
+                "slk",
+                "${workspaceRoot}",
+                "${workspaceRoot}/LostTemple.w3x"
+            ]
+        },
+    ]
+}
