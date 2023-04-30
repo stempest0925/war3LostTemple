@@ -1,12 +1,11 @@
 JassJapi = require "jass.japi"
 
-
 ---@class _J JAPI
 _J = {
     _lib = nil,
     _tips = {},
-    _formatter = require "lib.japi.formatter",
-    _triumph = require "lib.japi.triumph",
+    _formatter = require "scripts.lib.japi.formatter",
+    _triumph = require "scripts.lib.japi.triumph",
 }
 
 ---@type table<string,any>
