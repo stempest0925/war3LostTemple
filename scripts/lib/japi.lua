@@ -1184,7 +1184,7 @@ end
 --- 设置 frame 的 Point 锚点 (跟随relativeFrame 的 relativePoint 锚点) 偏移(x, y)
 ---@param frame number integer
 ---@param point number integer
----@param relativeFrame number integer
+---@param relativeFrame string string
 ---@param relativePoint number integer
 ---@param x number float(5)
 ---@param y number float(5)

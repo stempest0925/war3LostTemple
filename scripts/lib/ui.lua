@@ -44,11 +44,11 @@ _U = {
     end,
 
     -- 设置相对定位
-    relative = function(x, y, referFrameId, point, referPoint)
+    relative = function(x, y, referTemplate, point, referPoint)
         if (_U.frameHandle > 0) then
             local point = point or _C.FRAME_ALIGN_LEFT_TOP
             local referPoint = referPoint or _C.FRAME_ALIGN_LEFT_TOP
-            _J.DzFrameSetPoint(_U.frameHandle, point, referFrameId, referPoint, x, y)
+            _J.DzFrameSetPoint(_U.frameHandle, point, referTemplate, referPoint, x, y)
         end
         return _U
     end,
