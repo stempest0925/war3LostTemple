@@ -26,3 +26,45 @@ Frame "BACKDROP" "CH_Hero" {
         Width 0.032,
         Height 0.032,
     }
+// ChooseHeroPanel
+Frame "Frame" "CHP_frame" {
+    Width 0.3,
+    Height 0.2,
+
+    // 背景
+    Frame "BACKDROP" "CHP_bg" {
+        
+    }
+
+    // 按钮
+    Frame "BUTTON" "CHP_heroBtn" {
+        Width 0.032,
+        Height 0.032,
+    }
+
+    // 确定按钮
+    Frame "BUTTON" "CHP_confirm" {
+        Width 0.04,
+        Height 0.02,
+    }
+}
+
+// HeroIntroduction
+Frame "Frame" "HI_frame" {
+    // 背景
+    Frame "BACKDROP" "HI_bg" {
+
+        
+    }
+
+    // 文本
+    Frame "TEXT" "HI_title" {
+
+    }
+
+    // 文本
+    Frame "TEXT" "HI_text" {
+
+    }
+}
+
