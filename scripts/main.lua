@@ -5,3 +5,6 @@ console.enable = true
 
 _F.FogEnable(false)
 _F.FogMaskEnable(false)
+
+require 'scripts.ui.ui'
+chooseHero()

@@ -1,0 +1,28 @@
+Frame "Frame" "CH_Frame" {
+    Width 0.28,
+    Height 0.28,
+
+    Frame "BACKDROP" "CH_Bg" {
+        // 使用父节点数据
+        UseActiveContext,
+        SetAllPoints,
+        // 背景
+        BackdropTileBackground,
+        BackdropBackground  "UI\Widgets\EscMenu\Human\quest-normal-background.blp",
+        BackdropBackgroundInsets 0.004f 0.004f 0.004f 0.004f,
+        BackdropBackgroundSize  0.064,
+        // BackdropBlendAll, 支持背景透明
+
+        // 边框
+        BackdropEdgeFile  "UI\Widgets\EscMenu\Orc\orc-options-menu-border.blp",
+        BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+        BackdropCornerSize  0.024,
+    }
+
+    
+}
+
+Frame "BACKDROP" "CH_Hero" {
+        Width 0.032,
+        Height 0.032,
+    }
